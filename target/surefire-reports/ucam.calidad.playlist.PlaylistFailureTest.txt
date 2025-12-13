@@ -1,0 +1,52 @@
+-------------------------------------------------------------------------------
+Test set: ucam.calidad.playlist.PlaylistFailureTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.084 s <<< FAILURE! -- in ucam.calidad.playlist.PlaylistFailureTest
+ucam.calidad.playlist.PlaylistFailureTest.failAssertNull_FoundIsNotNull -- Time elapsed: 0.045 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Debería fallar porque sí existe ==> expected: <null> but was: <Song{id='1', title='Song A', artist='Artist A', durationSeconds=180}>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertNull.failNotNull(AssertNull.java:50)
+	at org.junit.jupiter.api.AssertNull.assertNull(AssertNull.java:35)
+	at org.junit.jupiter.api.Assertions.assertNull(Assertions.java:287)
+	at ucam.calidad.playlist.PlaylistFailureTest.failAssertNull_FoundIsNotNull(PlaylistFailureTest.java:39)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+ucam.calidad.playlist.PlaylistFailureTest.failAssertEquals_WrongDuration -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Duración incorrecta a propósito ==> expected: <999> but was: <180>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:150)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:563)
+	at ucam.calidad.playlist.PlaylistFailureTest.failAssertEquals_WrongDuration(PlaylistFailureTest.java:25)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+ucam.calidad.playlist.PlaylistFailureTest.failAssertTrue_AddDuplicateShouldBeTrue -- Time elapsed: 0.003 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Debería fallar porque es duplicado ==> expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertTrue.failNotTrue(AssertTrue.java:63)
+	at org.junit.jupiter.api.AssertTrue.assertTrue(AssertTrue.java:36)
+	at org.junit.jupiter.api.Assertions.assertTrue(Assertions.java:214)
+	at ucam.calidad.playlist.PlaylistFailureTest.failAssertTrue_AddDuplicateShouldBeTrue(PlaylistFailureTest.java:32)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+ucam.calidad.playlist.PlaylistFailureTest.failAssertSame_DifferentInstances -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Debe fallar porque no es la misma instancia ==> expected: ucam.calidad.playlist.Song@71075444<Song{id='1', title='Song A', artist='Artist A', durationSeconds=180}> but was: ucam.calidad.playlist.Song@4f32a3ad<Song{id='1', title='Song A', artist='Artist A', durationSeconds=180}>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertSame.failNotSame(AssertSame.java:50)
+	at org.junit.jupiter.api.AssertSame.assertSame(AssertSame.java:35)
+	at org.junit.jupiter.api.Assertions.assertSame(Assertions.java:2873)
+	at ucam.calidad.playlist.PlaylistFailureTest.failAssertSame_DifferentInstances(PlaylistFailureTest.java:46)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
