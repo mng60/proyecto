@@ -9,13 +9,13 @@ public class PlaylistFailureTest {
 
     private Playlist playlist;
     private Song s1;
-    private Song s2;
+    private Song s3;
 
     @BeforeEach
     public void setUp() {
         playlist = new Playlist("Favoritas");
         s1 = new Song("1", "Song A", "Artist A", 180);
-        s2 = new Song("2", "Song B", "Artist B", 200);
+        s3 = new Song("2", "Song B", "Artist B", 200);
         playlist.addSong(s1);
     }
 
