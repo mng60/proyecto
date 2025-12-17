@@ -22,7 +22,7 @@ public class PlaylistFixedTest {
 
     @Test
     public void testAssertEquals_CorrectDuration() {
-        assertEquals(180, playlist.getTotalDuration(), "La duración total debe coincidir");
+        assertEquals(999, playlist.getTotalDuration(), "La duración total debe coincidir");
     }
 
     @Test
